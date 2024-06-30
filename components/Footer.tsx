@@ -13,16 +13,16 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-4 mt-8">
-      <div className="col-span-1 flex flex-col ">
-        <h5 className="font-[700] text-[14px] mb-4">Hobbycue</h5>
+    <div className="grid px-20 grid-cols-3 3xl:grid-cols-4 max-2xl:grid-cols-2 max-md:grid-cols-3 max-sm:grid-cols-1 mt-8">
+      <div className="col-span-1 flex flex-col max-2xl:mb-8 mb-0">
+        <h5 className="font-[700] text-[14px] mb-4 ">Hobbycue</h5>
         <p className="font-[400] text-[14px]">About Us</p>
         <p className="font-[400] text-[14px]">Our Services</p>
         <p className="font-[400] text-[14px]">Work with Us</p>
         <p className="font-[400] text-[14px]">FAQ</p>
         <p className="font-[400] text-[14px]">Contact Us</p>
       </div>
-      <div className="col-span-1 flex flex-col">
+      <div className="col-span-1 flex flex-col max-2xl:mb-8 mb-0">
         <h5 className="font-[700] text-[14px] mb-4">How Do I</h5>
         <p className="font-[400] text-[14px]">Sign Up</p>
         <p className="font-[400] text-[14px]">Add a Listing</p>
@@ -40,7 +40,9 @@ const Footer = () => {
       </div>
       <div className="col-span-1 flex flex-col">
         <div>
-          <h5 className="font-[700] text-[14px] mb-4">Social Media</h5>
+          <h5 className="font-[700] text-[14px] mb-4 max-2xl:mt-8 mt-0">
+            Social Media
+          </h5>
           <div className="flex">
             <div className="bg-[#CCC] p-1 rounded-full mr-5">
               <FontAwesomeIcon

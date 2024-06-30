@@ -1,8 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { useSignUp } from "@clerk/nextjs"
-import { useRouter } from "next/navigation"
 import google from "@/public/assets/google.png"
 import facebook from "@/public/assets/facebook.png"
 import Image from "next/image"
@@ -11,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Auth = () => {
   const [signInActive, setSignInActive] = React.useState(true)
   return (
-    <div className="h-full w-[30%] flex flex-col justify-start mt-24">
+    <div className="h-full w-[384px] select-none flex flex-col justify-start l:mt-24 my-12">
       <div className="flex  text-[20px] gap-6">
         <button
           onClick={() => setSignInActive(true)}
@@ -43,9 +41,11 @@ const Auth = () => {
         <p>Continue with Facebook</p>
       </button>
       <div className="flex justify-center items-center mt-6 mb-6">
-        <div className="w-[206px] h-[2px] bg-[#CED4DA]"></div>
-        <p className="text-[12px] font-[600] w-[93px]">Or connect with</p>
-        <div className="w-[206px] h-[2px] bg-[#CED4DA]"></div>
+        <div className="2xl:w-[206px] w-[50px] h-[2px] bg-[#CED4DA]"></div>
+        <p className="text-[12px] font-[600] text-center w-[93px]">
+          Or connect with
+        </p>
+        <div className="2xl:w-[206px] w-[50px] h-[2px] bg-[#CED4DA]"></div>
       </div>
       <input
         type="email"
@@ -72,7 +72,8 @@ const Auth = () => {
               <p>Forgot password?</p>
             </div>
           </div>
-          <div className="border-[1px] border-black rounded-[8px] mt-4 flex justify-center items-center h-[40px]">
+          <div className="border-[1px] cursor-pointer border-[#8064A2] text-[#8064A2] font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]">
+            {/* <div className="border-[1px] border-black rounded-[8px] mt-4 flex justify-center items-center h-[40px]"> */}
             Continue
           </div>
         </>
@@ -91,7 +92,7 @@ const Auth = () => {
             <span className="text-black">Terms of Service</span> and{" "}
             <span className="text-black">Privacy Policy.</span>
           </p>
-          <div className="border-[1px] bg-[#8064A2] text-white font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]">
+          <div className="border-[1px] cursor-pointer bg-[#8064A2] text-white font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]">
             Agree and Continue
           </div>
         </>

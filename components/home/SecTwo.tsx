@@ -11,19 +11,18 @@ const SecTwo = () => {
   return (
     <section
       id="home-two"
-      // className="h-screen px-20 bg-blue-300 flex justify-center items-center"
-      className="h-screen px-20 bg-[#fff] flex justify-center items-center"
+      className="md:h-screen md:mt-0 max-md:px-5 mt-20 px-20 bg-[#fff] flex justify-center items-center"
     >
-      <div className="grid grid-cols-2 grid-rows-2 justify-center items-center gap-8">
-        <div className="border-2 w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
+      <div className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-1 justify-center items-center gap-8">
+        <div className="border-2 2xl:w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
           <div className="flex justify-center items-center gap-6 mb-5">
             <FontAwesomeIcon
               icon={faUsers}
-              className="w-[38px] text-[#8064A2]"
+              className="w-[38px] h-[38px] text-[#8064A2]"
             />
             <h2 className="text-[24px] font-[600]">People</h2>
           </div>
-          <p className="w-[520px] mb-8">
+          <p className="2xl:w-[520px] mb-8">
             Find a teacher, coach, or expert for your hobby interest in your
             locality. Find a partner, teammate, accompanist or collaborator
           </p>
@@ -31,7 +30,7 @@ const SecTwo = () => {
             Connect
           </button>
         </div>
-        <div className="border-2 w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
+        <div className="border-2 2xl:w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
           <div className="flex justify-center items-center gap-6 mb-5">
             <FontAwesomeIcon
               icon={faLocationDot}
@@ -39,7 +38,7 @@ const SecTwo = () => {
             />
             <h2 className="text-[24px] font-[600]">Place</h2>
           </div>
-          <p className="w-[520px] mb-8">
+          <p className="2xl:w-[520px] mb-8">
             Find a class, school, playground, auditorium, studio, shop or an
             event venue. Book a slot at venues that allow booking through
             hobbycue.
@@ -48,15 +47,15 @@ const SecTwo = () => {
             Meet up
           </button>
         </div>
-        <div className="border-2 w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
-          <div className="flex justify-center items-center gap-6">
+        <div className="border-2 2xl:w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
+          <div className="flex justify-center items-center gap-6 mb-5">
             <FontAwesomeIcon
               icon={faBasketShopping}
-              className="w-[38px] text-[#C0504D] "
+              className="w-[38px] h-[38px] text-[#C0504D] "
             />
-            <h2 className="text-[24px] font-[600] mb-5">Product</h2>
+            <h2 className="text-[24px] font-[600] ">Product</h2>
           </div>
-          <p className="w-[520px] mb-8">
+          <p className="2xl:w-[520px] mb-8">
             Find equipment or supplies required for your hobby. Buy, rent or
             borrow from shops, online stores or from community members.
           </p>
@@ -64,7 +63,7 @@ const SecTwo = () => {
             Get it
           </button>
         </div>
-        <div className="border-2 w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
+        <div className="border-2 2xl:w-[608px] h-[297px] flex flex-col justify-center items-start px-14 rounded-[8px] border-[#CED4DA]">
           <div className="flex justify-center items-center gap-6 mb-5">
             <FontAwesomeIcon
               icon={faBookmark}
@@ -72,7 +71,7 @@ const SecTwo = () => {
             />
             <h2 className="text-[24px] font-[600]">Program</h2>
           </div>
-          <p className="w-[520px] mb-8">
+          <p className="2xl:w-[520px] mb-8">
             Find events, meetups and workshops related to your hobby. Register
             or buy tickets online.
           </p>

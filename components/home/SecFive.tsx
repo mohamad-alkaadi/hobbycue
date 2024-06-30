@@ -5,9 +5,9 @@ const SecFive = () => {
   return (
     <section
       id="home-four"
-      className="h-[640px] px-20 py-28 bg-[#F7FDFF] flex flex-col"
+      className="h-[640px] max-md:px-5 px-20 py-28 bg-[#F7FDFF] flex flex-col"
     >
-      <h4 className="text-[36px] font-[500]">
+      <h4 className="text-[36px] font-[500] max-md:text-[22px]">
         Your <span className="text-[#8064A2]">Hobby</span>, Your{" "}
         <span className="text-[#0096C8]">Community...</span>
       </h4>
