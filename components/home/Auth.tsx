@@ -6,8 +6,15 @@ import facebook from "@/public/assets/facebook.png"
 import Image from "next/image"
 import { faLock } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useRouter } from "next/navigation"
+
 const Auth = () => {
   const [signInActive, setSignInActive] = React.useState(true)
+  const router = useRouter()
+
+  const signIn = () => {
+    router.push("/after-signin/")
+  }
   return (
     <div className="h-full w-[384px] select-none flex flex-col justify-start l:mt-24 my-12">
       <div className="flex  text-[20px] gap-6">
@@ -32,20 +39,26 @@ const Auth = () => {
           Join In
         </button>
       </div>
-      <button className="border-2 mt-10 py-2 border-[#8064A2] flex items-center justify-center font-[600] text-[14px] rounded-[8px]">
+      <button
+        onClick={() => signIn()}
+        className="border-2 mt-10 py-2 border-[#8064A2] flex items-center justify-center font-[600] text-[14px] rounded-[8px]"
+      >
         <Image src={google} alt="google" className="mr-3" />
         <p className="">Continue with Google</p>
       </button>
-      <button className="border-2 mt-10 py-2 border-[#8064A2] flex items-center justify-center font-[600] text-[14px] rounded-[8px]">
+      <button
+        onClick={() => signIn()}
+        className="border-2 mt-10 py-2 border-[#8064A2] flex items-center justify-center font-[600] text-[14px] rounded-[8px]"
+      >
         <Image src={facebook} alt="facebook" className="mr-2" />
         <p>Continue with Facebook</p>
       </button>
       <div className="flex justify-center items-center mt-6 mb-6">
-        <div className="2xl:w-[206px] w-[50px] h-[2px] bg-[#CED4DA]"></div>
+        <div className="2xl:w-[140px] w-[50px] h-[2px] bg-[#CED4DA]"></div>
         <p className="text-[12px] font-[600] text-center w-[93px]">
           Or connect with
         </p>
-        <div className="2xl:w-[206px] w-[50px] h-[2px] bg-[#CED4DA]"></div>
+        <div className="2xl:w-[140px] w-[50px] h-[2px] bg-[#CED4DA]"></div>
       </div>
       <input
         type="email"
@@ -72,7 +85,10 @@ const Auth = () => {
               <p>Forgot password?</p>
             </div>
           </div>
-          <div className="border-[1px] cursor-pointer border-[#8064A2] text-[#8064A2] font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]">
+          <div
+            onClick={() => signIn()}
+            className="border-[1px] cursor-pointer border-[#8064A2] text-[#8064A2] font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]"
+          >
             {/* <div className="border-[1px] border-black rounded-[8px] mt-4 flex justify-center items-center h-[40px]"> */}
             Continue
           </div>
@@ -92,7 +108,10 @@ const Auth = () => {
             <span className="text-black">Terms of Service</span> and{" "}
             <span className="text-black">Privacy Policy.</span>
           </p>
-          <div className="border-[1px] cursor-pointer bg-[#8064A2] text-white font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]">
+          <div
+            onClick={() => signIn()}
+            className="border-[1px] cursor-pointer bg-[#8064A2] text-white font-[600] text-[14px] rounded-[8px] mt-4 flex justify-center items-center h-[40px]"
+          >
             Agree and Continue
           </div>
         </>

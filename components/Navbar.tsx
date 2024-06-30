@@ -154,8 +154,11 @@ const Navbar = () => {
                   className="rounded-full mr-2"
                 />
                 <FontAwesomeIcon
-                  className="w-[13px] self-center"
-                  icon={faChevronDown}
+                  className="w-[13px] self-center cursor-pointer"
+                  icon={openMenu ? faChevronUp : faChevronDown}
+                  onClick={() => {
+                    setOpenMenu(!openMenu)
+                  }}
                 />
               </div>
             </>
