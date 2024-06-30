@@ -5,8 +5,8 @@ import Auth from "./Auth"
 const SecOne = () => {
   return (
     <section id="home-one" className="px-20 bg-[#F7F5F9] flex justify-between">
-      <div className="h-full pl-20 flex flex-col text-[36px] font-[600] w-[50%]">
-        <h1 className="mt-24 mb-10">
+      <div className="h-full  pl-20 pr-28 flex flex-col  w-[70%]">
+        <h1 className="mt-24 mb-10 text-[36px] font-[600]">
           Explore your <span className="text-[#0096C8]">hobby</span> or{" "}
           <span className="text-[#8064A2]">passion</span>
         </h1>
@@ -28,9 +28,7 @@ const SecOne = () => {
           className="self-center justify-self-end"
         />
       </div>
-      <div>
-        <Auth />
-      </div>
+      <Auth />
     </section>
   )
 }

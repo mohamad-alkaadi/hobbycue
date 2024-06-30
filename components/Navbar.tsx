@@ -14,6 +14,7 @@ import {
   faMagnifyingGlass,
   faStar,
 } from "@fortawesome/free-solid-svg-icons"
+import { SignedIn, UserButton } from "@clerk/nextjs"
 const Navbar = () => {
   const [exploreOpen, setExploreOpen] = useState(false)
   return (
@@ -110,6 +111,9 @@ const Navbar = () => {
         <button className="border-2 border-[#8064A2] hover:bg-[#8064A2] hover:text-white text-[#8064A2] w-[112px] h-[40px] rounded-[8px]">
           Sign In
         </button>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
     </nav>
   )
